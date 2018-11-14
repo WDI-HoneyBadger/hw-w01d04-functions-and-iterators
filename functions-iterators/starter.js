@@ -143,7 +143,26 @@ var daysOfWeek = function () {
 
 // PART 8: Let's take the Subway
 
-
+var subway = function () {
+  var userInput = prompt("Please enter the letter associated with the following trains: \n The (L) Train. \n The (N) Train. \n The (S)ix Train.");
+  switch (userInput) {
+    case "L": {
+      alert("L train selected. The L train has the following stops: \n -8th Ave. \n -6th Ave. \n -Union Square. \n -3rd Ave. \n -1st Ave. \n -Bedford Ave.");
+    }
+      break;
+    case "N": {
+      alert("N train selected. The N train has the following stops: \n -Times Square. \n -Herald Square. \n -28th St. \n -23rd St - DAPS Nexus. \n -Union Square. \n -8th St.");
+    }
+      break;
+    case "S": {
+      alert("S train selected. The S train has the following stops: \n -Grand Central. \n -33rd St. \n -28th St. \n -23rd St. \n -Union Square. \n -Astor Place.");
+    }
+      break;
+    default: {
+      alert("Invalid input.");
+    }
+  }
+}
 
 // PART 9: Truth - y & False -y Checker
 var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
