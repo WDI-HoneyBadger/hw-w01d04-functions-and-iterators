@@ -58,7 +58,20 @@ var oddOrEvenString = function(str){
 
 // PART 3: Median
 
+var testArray = [1,2,8,4,5,6,7,3,9,10];
 
+var medianOfArray = function(arr){
+  arr.sort(function(a, b){return a - b});
+  var midpoint = Math.floor(arr.length / 2);
+  if ((arr.length % 2) !== 0){
+    return /* `${arr} >>> ` + */ arr[midpoint];
+  }
+  else {
+    //median of array with even number of elements, avg of the two middle elements.
+    return /* `${arr} >>> ` + */ ((arr[midpoint] + arr[midpoint - 1]) / 2);
+  }
+  
+}
 
 // PART 4: Sum Array
 
