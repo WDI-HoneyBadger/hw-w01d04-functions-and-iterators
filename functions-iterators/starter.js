@@ -167,12 +167,12 @@ var subway = function () {
 // PART 9: Truth - y & False -y Checker
 var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
 
-var truthyFalsey = function(arr){
-  for (var i = 0; i < arr.length; i++){
-    if(arr[i]){
+var truthyFalsey = function (arr) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i]) {
       console.log(`<${arr[i]}> is Truthy.`);
     }
-    else{
+    else {
       console.log(`<${arr[i]}> is Falsey.`);
     }
   }
@@ -181,11 +181,41 @@ var truthyFalsey = function(arr){
 
 // BONUS: Double X Counter
 
+var countXx = function (str) {
 
+  var result = 0;
+  str = str.toUpperCase();
+
+  for (var i = 0; i < str.length; i++) {
+    if (str.charAt(i) == "X" && str.charAt(i + 1)) {
+      result += 1;
+    }
+  }
+  return result;
+}
 
 // BONUS Two-Dimensional Array
 
+var makeArray = function (n) {
 
+  var arr = [];
+  for (var x = 0; x < n; x++) {
+
+    arr.push(new Array(n));
+
+    for (var y = 0; y < n; y++) {
+      if (x === y) {
+        arr[x][y] = 1;
+      }
+      else {
+        arr[x][y] = 0;
+      }
+    }
+  }
+
+  return arr;
+
+}
 
 
 /* connection checker console log */
