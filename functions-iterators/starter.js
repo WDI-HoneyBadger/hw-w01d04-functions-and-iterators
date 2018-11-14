@@ -103,7 +103,17 @@ var vowelCount = function (str){
 
 // PART 6: Initials
 
+var initials = function (str){
 
+  var result = str.charAt(0);
+
+  for (var i = 0; i < str.length; i++){
+    if (str.charAt(i) == " "){
+      result += str.charAt(i + 1);
+    }
+  }
+  return result;
+}
 
 // PART 7: Days of the week
 
