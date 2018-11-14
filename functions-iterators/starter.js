@@ -85,6 +85,20 @@ var sumArray = function (arr){
 
 // PART 5: Vowel Count
 
+var testString = "Neil Patrick Harris";
+
+var vowelCount = function (str){
+  var sum = 0;
+  var chr = "";
+  str = str.toUpperCase();
+  for (var i = 0; i < str.length; i++){
+    chr = str.charAt(i);
+    if (chr == "A" || chr == "E" || chr == "I" || chr == "O" || chr == "U"){
+      sum += 1;
+    }
+  }
+  return sum;
+}
 
 
 // PART 6: Initials
