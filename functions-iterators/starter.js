@@ -35,7 +35,14 @@ var justDoIt = function(str){
 
 // PART 1: Big or Small String?
 
-
+var bigOrSmallString = function(str){
+  if(str.length > 10){
+    return "This word is loooooong!";
+  }
+  else{
+    return "This word is short 😬";
+  }
+}
 
 // PART 2: Odd or Even String Length?
 
