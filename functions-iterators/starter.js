@@ -167,7 +167,16 @@ var subway = function () {
 // PART 9: Truth - y & False -y Checker
 var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
 
-
+var truthyFalsey = function(arr){
+  for (var i = 0; i < arr.length; i++){
+    if(arr[i]){
+      console.log(`<${arr[i]}> is Truthy.`);
+    }
+    else{
+      console.log(`<${arr[i]}> is Falsey.`);
+    }
+  }
+}
 
 
 // BONUS: Double X Counter
