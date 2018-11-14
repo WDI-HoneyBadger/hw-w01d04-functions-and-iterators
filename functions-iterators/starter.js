@@ -46,7 +46,15 @@ var bigOrSmallString = function(str){
 
 // PART 2: Odd or Even String Length?
 
+var oddOrEvenString = function(str){
+  if(str.length % 2 === 0){
+    return "This string length is TOTALLY even!";
+  }
+  else{
+    return "This string's length is odd..";
+  }
 
+}
 
 // PART 3: Median
 
