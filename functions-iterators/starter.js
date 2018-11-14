@@ -29,7 +29,9 @@ This will help us track your progress and it will give you practice writing good
 
 // PART 0: Just DO it!!
 
-
+var justDoIt = function(str){
+  return `${str}, JUST DO IT!`;
+}
 
 // PART 1: Big or Small String?
 
