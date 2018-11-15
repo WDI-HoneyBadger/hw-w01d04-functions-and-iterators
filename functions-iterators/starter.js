@@ -57,7 +57,10 @@ function oddOrEvenString(string){
 //console.log(oddOrEvenString('Abdulrab'));
 
 // PART 3: Median
-var number1 = [10, 20, 30, 40, 50, 77, 89];
+var number1 = [89, 20, 40, 30, 50, 77, 10];
+
+number1.sort(function(a, b){return a-b});
+
 function medianOcfArray(arr){
   var median;
   if (arr.length % 2 == 1){
@@ -67,7 +70,7 @@ function medianOcfArray(arr){
     console.log('The lenght of array is event.')
   }
 }
-//console.log(medianOcfArray(number1));
+console.log(medianOcfArray(number1));
 
 // PART 4: Sum Array
 var number2 = [20, 20, 20, 20, 20];
@@ -101,11 +104,37 @@ function vowelCount(str){
   return count;
 }
 
-console.log(vowelCount('Abdulrab'))
+//console.log(vowelCount('Abdulrab'))
 
 // PART 6: Initials
 
+function initials(personName){
+var cher = [];
+cher[0] = personName[0].toUpperCase();
 
+  for (var i = 1; i < personName.length; i++){
+    if (personName[i] === " " ){
+      cher[i] = personName[i+1].toUpperCase();
+    }
+  }
+
+  for (var i = 0; i < cher.length; i++){
+    /* if (cher[i] == null){
+      cher[i].filter(null);
+    } */
+
+    var cher = cher.filter(function(x){
+      return (x !== (undefined || null || ''));
+    });
+  }
+
+  console.log(cher.toString());
+  /* cher.forEach(function(topping){
+    console.log(topping);
+  }) */
+}
+
+initials('Abdulrab bin talib');
 
 // PART 7: Days of the week
 
