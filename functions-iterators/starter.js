@@ -28,14 +28,20 @@ This will help us track your progress and it will give you practice writing good
 /* ++++====+++==++++==+++++======++++===++++++=====+++==++++++++++===== */
 
 // PART 0: Just DO it!!
-function justDoIt(){
-  return 'masarah JUST DO IT'
+function justDoIt(name) {
+  typeof name == String
+return (` ${name} JUST DO IT`)
 }
 
-
-
 // PART 1: Big or Small String?
-
+function bigOrSmallString(word) {
+  typeof word == "string"
+  if ((word).length > 10 ){
+    return 'This word is loooooong!'
+  } else {
+   return 'This word is short 😬'
+  }
+}
 
 
 // PART 2: Odd or Even String Length?
@@ -67,7 +73,7 @@ function justDoIt(){
 
 
 // PART 9: Truth - y & False -y Checker
-//var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
+var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
 
 
 
@@ -83,4 +89,5 @@ function justDoIt(){
 
 /* connection checker console log */
 console.log('starter.js is connected! Let\'s get to work! 💪');
-console.log('Masarah JUST DO IT')
+console.log(justDoIt("Masarah"));
+console.log(bigOrSmallString("word"));
