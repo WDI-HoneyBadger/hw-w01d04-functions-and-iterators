@@ -142,8 +142,8 @@ if (day == "Monday"){
   alert("Weeeeeee!");
 } else {
   alert("Huh, sorry didn't get that?");
-}
- */
+} */
+ 
 // PART 8: Let's take the Subway
 
 /* var trains = prompt("Select (L) Train, The (N) Train, The (S)ix Train.");
@@ -151,27 +151,63 @@ if (day == "Monday"){
 switch(trains){
   case 'L':
   alert ("8th Ave, 6th Ave, Union Square, 3rd Ave, 1st Ave, Bedford Ave");
+  alert("Thank You. ");
   break;
 
   case 'N':
   alert("Times Square, Herald Square, 28th St, 23rd St - DAPS Nexus, Union Square, 8th St");
+  alert("Thank You. ");
   break;
 
   case 'S':
   alert("Grand Central, 33rd St, 28th St, 23rd St, Union Square, Astor Place");
+  alert("Thank You. ");
   break;
 
-}; 
- */
+  default :
+  alert("Error input. ")
+};  */
+
+
+
+ 
 
 // PART 9: Truth - y & False -y Checker
 var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
 
+function truthyFalsey(arr){
+
+  for (var i = 0; i < arr.length; i++){
+
+    if (arr[i]){
+      console.log(`${arr[i]}  = True`);
+    } else {
+      console.log(`${arr[i]}  = False`);
+    }
+  };
+
+};
+
+truthyFalsey(arr);
 
 
 
 // BONUS: Double X Counter
 
+function countXx(string){
+  var count=0;
+  for (var i = 0; i < string.length; i++){
+    if (string[i] == 'x'){
+      count++;
+    }
+  };
+  count -= 1;
+  console.log(`${string} counter x = ${count}`);
+}
+/* countXx('abcxx');
+countXx('xxx');
+countXx('xxxx');
+countXx('xxxxx'); */
 
 
 // BONUS Two-Dimensional Array
