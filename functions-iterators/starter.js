@@ -56,7 +56,17 @@ function oddOrEvenString (stringdete){
 }
 
 // PART 3: Median
-
+function medianOfArray(array) { 
+var medianOfArray = 0, numsLen = array.length;
+array.sort(); 
+if (numsLen % 2 === 0)
+  {
+    medianOfArray = (array[numsLen / 2 - 1] + array[numsLen / 2]) /2
+  } else {
+    medianOfArray = array[(numsLen - 1) / 2];
+  }
+  return medianOfArray;
+}
 
 
 // PART 4: Sum Array
@@ -99,3 +109,4 @@ console.log('starter.js is connected! Let\'s get to work! 💪');
 console.log(justDoIt("Masarah"));
 console.log(bigOrSmallString("is this string small or big"));
 console.log(oddOrEvenString("is this string odd or even"));
+console.log(medianOfArray([1,2,3,4,5,6,8]));
