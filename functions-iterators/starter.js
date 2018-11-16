@@ -46,7 +46,14 @@ function bigOrSmallString(word) {
 
 // PART 2: Odd or Even String Length?
 
-
+function oddOrEvenString (stringdete){
+ typeof stringdete == "string"
+  if ((stringdete).length % 2) {
+    return "This string's length is odd.."
+  }else {
+    return "This string length is TOTALLY even!"
+  }
+}
 
 // PART 3: Median
 
@@ -90,4 +97,5 @@ var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', f
 /* connection checker console log */
 console.log('starter.js is connected! Let\'s get to work! 💪');
 console.log(justDoIt("Masarah"));
-console.log(bigOrSmallString("word"));
+console.log(bigOrSmallString("is this string small or big"));
+console.log(oddOrEvenString("is this string odd or even"));
