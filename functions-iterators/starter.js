@@ -70,7 +70,7 @@ function medianOcfArray(arr){
     console.log('The lenght of array is event.')
   }
 }
-console.log(medianOcfArray(number1));
+//console.log(medianOcfArray(number1));
 
 // PART 4: Sum Array
 var number2 = [20, 20, 20, 20, 20];
@@ -117,32 +117,52 @@ cher[0] = personName[0].toUpperCase();
       cher[i] = personName[i+1].toUpperCase();
     }
   }
-
-  for (var i = 0; i < cher.length; i++){
-    /* if (cher[i] == null){
-      cher[i].filter(null);
-    } */
-
     var cher = cher.filter(function(x){
       return (x !== (undefined || null || ''));
     });
-  }
+  
 
   console.log(cher.toString());
-  /* cher.forEach(function(topping){
-    console.log(topping);
-  }) */
 }
-
 initials('Abdulrab bin talib');
 
 // PART 7: Days of the week
 
+/* day = prompt("Please enter the day. ");
 
-
+if (day == "Monday"){
+  alert("Energize!");
+} else if (day == "Tuesday"){
+  alert("Just getting started!");
+} else if (day == "Wednesday"){
+  alert("Just getting started!");
+} else if (day == "Thursday"){
+  alert("Just getting started!");
+} else if (day == "Friday" || day == "Saturday" || day == "Sunday"){
+  alert("Weeeeeee!");
+} else {
+  alert("Huh, sorry didn't get that?");
+}
+ */
 // PART 8: Let's take the Subway
 
+/* var trains = prompt("Select (L) Train, The (N) Train, The (S)ix Train.");
 
+switch(trains){
+  case 'L':
+  alert ("8th Ave, 6th Ave, Union Square, 3rd Ave, 1st Ave, Bedford Ave");
+  break;
+
+  case 'N':
+  alert("Times Square, Herald Square, 28th St, 23rd St - DAPS Nexus, Union Square, 8th St");
+  break;
+
+  case 'S':
+  alert("Grand Central, 33rd St, 28th St, 23rd St, Union Square, Astor Place");
+  break;
+
+}; 
+ */
 
 // PART 9: Truth - y & False -y Checker
 var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
