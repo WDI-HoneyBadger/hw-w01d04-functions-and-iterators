@@ -70,7 +70,16 @@ if (numsLen % 2 === 0)
 
 
 // PART 4: Sum Array
+function sumArray(arr) {
+ if(!Array.isArray(arr)) 
+ return;
+ let sum=0;
+ arr.forEach(each => {
+   sum+=each;
 
+ })
+ return sum
+}
 
 
 // PART 5: Vowel Count
@@ -110,3 +119,4 @@ console.log(justDoIt("Masarah"));
 console.log(bigOrSmallString("is this string small or big"));
 console.log(oddOrEvenString("is this string odd or even"));
 console.log(medianOfArray([1,2,3,4,5,6,8]));
+console.log(sumArray([1,2,3,4,5,6,8]));
