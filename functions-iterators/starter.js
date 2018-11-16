@@ -28,6 +28,9 @@ This will help us track your progress and it will give you practice writing good
 /* ++++====+++==++++==+++++======++++===++++++=====+++==++++++++++===== */
 
 // PART 0: Just DO it!!
+function justDoIt(){
+  return 'masarah JUST DO IT'
+}
 
 
 
@@ -64,7 +67,7 @@ This will help us track your progress and it will give you practice writing good
 
 
 // PART 9: Truth - y & False -y Checker
-var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
+//var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
 
 
 
@@ -80,3 +83,4 @@ var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', f
 
 /* connection checker console log */
 console.log('starter.js is connected! Let\'s get to work! 💪');
+console.log('Masarah JUST DO IT')
