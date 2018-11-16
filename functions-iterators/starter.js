@@ -108,23 +108,16 @@ function vowelCount(str){
 
 // PART 6: Initials
 
-function initials(personName){
-var cher = [];
-cher[0] = personName[0].toUpperCase();
-
-  for (var i = 1; i < personName.length; i++){
-    if (personName[i] === " " ){
-      cher[i] = personName[i+1].toUpperCase();
-    }
+function initials(name) {
+  var initials = "";
+  var word = name.split(" ");
+  for (var i = 0; i < word.length; i++) {
+    initials += word[i].charAt(0);
   }
-    var cher = cher.filter(function(x){
-      return (x !== (undefined || null || ''));
-    });
-  
-
-  console.log(cher.toString());
+  return initials;
 }
-initials('Abdulrab bin talib');
+
+console.log(initials("Abdulrab Bin Talib"));
 
 // PART 7: Days of the week
 
@@ -188,7 +181,7 @@ function truthyFalsey(arr){
 
 };
 
-truthyFalsey(arr);
+//truthyFalsey(arr);
 
 
 
@@ -212,7 +205,13 @@ countXx('xxxxx'); */
 
 // BONUS Two-Dimensional Array
 
+function twoDimensional(n){
+  arr = [];
+  
 
+ return arr;
+}
+//console.log(twoDimensional(4));
 
 
 /* connection checker console log */
