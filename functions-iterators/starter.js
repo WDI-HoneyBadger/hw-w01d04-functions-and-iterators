@@ -83,7 +83,10 @@ function sumArray(arr) {
 
 
 // PART 5: Vowel Count
-
+function vowelCount(str) {
+  const match = str.match(/[aeiou]/gi);
+  return match ? match.length : 0 ;
+}
 
 
 // PART 6: Initials
@@ -120,3 +123,4 @@ console.log(bigOrSmallString("is this string small or big"));
 console.log(oddOrEvenString("is this string odd or even"));
 console.log(medianOfArray([1,2,3,4,5,6,8]));
 console.log(sumArray([1,2,3,4,5,6,8]));
+console.log(vowelCount("vowel count"));
