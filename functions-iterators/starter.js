@@ -109,6 +109,7 @@ function vowelCount(str){
 // PART 6: Initials
 
 function initials(name) {
+
   var initials = "";
   var word = name.split(" ");
   for (var i = 0; i < word.length; i++) {
@@ -117,7 +118,7 @@ function initials(name) {
   return initials;
 }
 
-console.log(initials("Abdulrab Bin Talib"));
+//console.log(initials("Abdulrab Bin Talib"));
 
 // PART 7: Days of the week
 
@@ -166,7 +167,7 @@ switch(trains){
  
 
 // PART 9: Truth - y & False -y Checker
-var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
+//var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
 
 function truthyFalsey(arr){
 
@@ -203,15 +204,38 @@ countXx('xxxx');
 countXx('xxxxx'); */
 
 
+
 // BONUS Two-Dimensional Array
 
-function twoDimensional(n){
-  arr = [];
-  
+function makeArray(n){
+  var array = [], row = [];
+  for (var i = 0; i < n; i++){
+      row.push(0);
+  }
+  for (var j = 0; j < n; j++){
+    array.push(row.slice());
+  }
+ return array; 
+} 
+console.log(makeArray(5));  
 
- return arr;
-}
-//console.log(twoDimensional(4));
+
+
+// SUPER MEGA BONUS!!!!!!
+
+
+var array1 = makeArray(5);
+
+for (var i = 0; i < array1.length; i++ ){
+  for (var j = 0; j < array1.length; j++) {
+    if (i === j){
+      array1[i][j] = 1;
+    } else {
+      array1[i][j] = 0;
+    };
+  };
+};
+console.log(array1); 
 
 
 /* connection checker console log */
