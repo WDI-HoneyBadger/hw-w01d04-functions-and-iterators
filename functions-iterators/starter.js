@@ -91,37 +91,79 @@ function vowelCount(str) {
 
 // PART 6: Initials
 function initials(personName) {
-return  personName;
+  var personName = { fullName:["Masarah", "Ahmad"]
+  }
+return  personName.fullName[0]+ ' ' + personName.fullName[1];
 
 }
 
 // PART 7: Days of the week
 
-  var answer=prompt("What day is today?")
+
+/*
+var answer=prompt("What day is today?");
   if (answer == 'Monday')
-   {alert("Energize!")
-  }else if (answer == 'Monday') 
+   {alert("Energize!");
+  }else if (answer == 'Tuesday') 
   {
-    alert("Just getting started!!")
-  } else if (answer == 'Tuesday')
+    alert("Just getting started!!");
+  } else if (answer == 'Wednesday')
    {
-     alert("JHump Hump!")
+     alert("JHump Hump!");
   } else if (answer == 'Thursday')
    {
-     alert("Almost there!")
-  } else if (answer == 'Friday' || 'Saturday' || 'Sunday') 
+     alert("Almost there!");
+  } else if (answer == 'Friday' || answer == 'Saturday' || answer =='Sunday') 
   {
-    alert ("Weeeeeee!")
+    alert ("Weeeeeee!");
   } else {
-    alert ("Huh, sorry didn't get that?")
-  }
+    alert ("Huh, sorry didn't get that?");
+  }*/
+
 // PART 8: Let's take the Subway
 
+
+/* 
+When the script is run, a menu should be prompted displaying:
+
+A list of three trains - The (L) Train, The (N) Train, The (S)ix Train
+And asking the user to make their selection!
+If the user enters: L
+
+An alert should output a message containing the user's selection labeled as L train and display the following stops:
+8th Ave
+6th Ave
+Union Square
+3rd Ave
+1st Ave
+Bedford Ave
+If the user enters: N
+An alert should output a message containing the user's selection labeled as N train and display the following stops:
+Times Square
+Herald Square
+28th St
+23rd St - DAPS Nexus
+Union Square
+8th St
+If the user enters S
+An alert should output a message containing the user's selection labeled as S train and display the following stops:
+Grand Central
+33rd St
+28th St
+23rd St
+Union Square
+Astor Place
+Finally, a Thank You message should alert.
+
+The program then exits.
+*/
 
 
 // PART 9: Truth - y & False -y Checker
 var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
-
+function truthyFalsey(arr){
+  return arr ? "truthey" : "falsey";
+}
 
 
 
@@ -135,7 +177,7 @@ var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', f
 
 
 /* connection checker console log */
-console.log('starter.js is connected! Let\'s get to work! 💪');
+//console.log('starter.js is connected! Let\'s get to work! 💪');
 console.log(justDoIt("Masarah"));
 console.log(bigOrSmallString("is this string small or big"));
 console.log(oddOrEvenString("is this string odd or even"));
@@ -143,3 +185,4 @@ console.log(medianOfArray([1,2,3,4,5,6,8]));
 console.log(sumArray([1,2,3,4,5,6,8]));
 console.log(vowelCount("vowel count"));
 console.log(initials("Masarah Ahmad"));
+console.log(truthyFalsey("Masarah Ahmad"));
