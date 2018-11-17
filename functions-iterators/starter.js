@@ -121,38 +121,39 @@ var answer=prompt("What day is today?");
   }*/
 
 // PART 8: Let's take the Subway
+var userenter=prompt("Let's take the Subway enter your Train letter ", "The (L) Train"," The (N) Train", "The (S)ix Train" );
+  if (userenter == 'L')
+   {alert(userenter + "8th Ave", "6th Ave", "Union Square", "3rd Ave", "1st Ave",  "Bedford Ave" );
+  }else if (userenter == 'N') 
+  {
+    alert("N train",
+    "Times Square",
+    "Herald Square",
+    "28th St",
+    "23rd St - DAPS Nexus",
+    "Union Square",
+    "8th St",
+    );
+  } else if (userenter == 'S')
+   {
+     alert("six train",
+     "Grand Central",
+     "33rd St",
+     "28th St",
+     "23rd St",
+     "Union Square",
+     "Astor Place");
+   }else {
+    alert ("Huh, sorry didn't get that?");
+  }
 
-
-/* 
+/*
 When the script is run, a menu should be prompted displaying:
 
 A list of three trains - The (L) Train, The (N) Train, The (S)ix Train
 And asking the user to make their selection!
 If the user enters: L
 
-An alert should output a message containing the user's selection labeled as L train and display the following stops:
-8th Ave
-6th Ave
-Union Square
-3rd Ave
-1st Ave
-Bedford Ave
-If the user enters: N
-An alert should output a message containing the user's selection labeled as N train and display the following stops:
-Times Square
-Herald Square
-28th St
-23rd St - DAPS Nexus
-Union Square
-8th St
-If the user enters S
-An alert should output a message containing the user's selection labeled as S train and display the following stops:
-Grand Central
-33rd St
-28th St
-23rd St
-Union Square
-Astor Place
 Finally, a Thank You message should alert.
 
 The program then exits.
