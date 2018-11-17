@@ -184,7 +184,7 @@ function truthyFalsy(arr){
         console.log(arr[i] + 'True-y');
         
       } else {
-        console.log(arr[i] + "False-y');
+        console.log(arr[i] + 'False-y');
       }
     }
   }
