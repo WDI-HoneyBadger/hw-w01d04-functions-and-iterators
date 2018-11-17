@@ -100,7 +100,7 @@ return  personName.fullName[0]+ ' ' + personName.fullName[1];
 // PART 7: Days of the week
 
 
-/*
+
 var answer=prompt("What day is today?");
   if (answer == 'Monday')
    {alert("Energize!");
@@ -118,7 +118,7 @@ var answer=prompt("What day is today?");
     alert ("Weeeeeee!");
   } else {
     alert ("Huh, sorry didn't get that?");
-  }*/
+  }
 
 // PART 8: Let's take the Subway
 var userenter=prompt("Let's take the Subway enter your Train letter ", "The (L) Train"," The (N) Train", "The (S)ix Train" );
