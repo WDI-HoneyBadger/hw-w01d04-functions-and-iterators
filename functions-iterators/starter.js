@@ -168,6 +168,16 @@ function truthyFalsey(arr){
 
 
 // BONUS: Double X Counter
+function countXx(wordx)
+{ var x_Count = 0;
+  letter = 'x'
+for (var i = 0; i < wordx.length; i++ )
+{
+  if (wordx.charAt(i) == letter){
+    x_Count += 1
+  }
+} return x_Count -1
+}
 
 
 
@@ -186,3 +196,4 @@ console.log(sumArray([1,2,3,4,5,6,8]));
 console.log(vowelCount("vowel count"));
 console.log(initials("Masarah Ahmad"));
 console.log(truthyFalsey("Masarah Ahmad"));
+console.log(countXx('xxxx'));
