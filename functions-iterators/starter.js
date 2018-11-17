@@ -94,17 +94,27 @@ function initials(personName) {
 return  personName;
 
 }
-initials("Neil Patrick Harris"); 
-
-//initials('Neil Patrick Harris');
-// NPH
-
-
 
 // PART 7: Days of the week
 
-
-
+  var answer=prompt("What day is today?")
+  if (answer == 'Monday')
+   {alert("Energize!")
+  }else if (answer == 'Monday') 
+  {
+    alert("Just getting started!!")
+  } else if (answer == 'Tuesday')
+   {
+     alert("JHump Hump!")
+  } else if (answer == 'Thursday')
+   {
+     alert("Almost there!")
+  } else if (answer == 'Friday' || 'Saturday' || 'Sunday') 
+  {
+    alert ("Weeeeeee!")
+  } else {
+    alert ("Huh, sorry didn't get that?")
+  }
 // PART 8: Let's take the Subway
 
 
