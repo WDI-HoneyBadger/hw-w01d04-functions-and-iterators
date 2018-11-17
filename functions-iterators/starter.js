@@ -90,6 +90,14 @@ function vowelCount(str) {
 
 
 // PART 6: Initials
+function initials(personName) {
+return  personName;
+
+}
+initials("Neil Patrick Harris"); 
+
+//initials('Neil Patrick Harris');
+// NPH
 
 
 
@@ -124,3 +132,4 @@ console.log(oddOrEvenString("is this string odd or even"));
 console.log(medianOfArray([1,2,3,4,5,6,8]));
 console.log(sumArray([1,2,3,4,5,6,8]));
 console.log(vowelCount("vowel count"));
+console.log(initials("Masarah Ahmad"));
