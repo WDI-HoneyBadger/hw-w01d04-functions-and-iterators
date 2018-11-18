@@ -122,28 +122,21 @@ function initials(name){
 function dayOfTheWeek() {
   var day = prompt('Please enter what day is today!', 'Enter the day here');
 
-  switch (day) {
-    case 'Monday':
+  switch (day.toLowerCase()) {
     case 'monday':
       alert('Energize!');
       break;
-    case 'Tuesday':
     case 'tuesday':
       alert('Just getting started!');
       break;
-    case 'Wednesday':
     case 'wednesday':
       alert('Hump Hump!');
       break;
-    case 'Thursday':
     case 'thursday':
       alert('Almost there!');
       break;
-    case 'Friday':
     case 'friday':
-    case 'Saturday':
     case 'saturday':
-    case 'Sunday':
     case 'sunday':
       alert('Weeeeeee!');
       break;
@@ -162,16 +155,16 @@ function subwayStops(){
   var trainS = ['Grand Central', '33rd St', '28rd St', '23rd St', 'Union Square', 'Astor Place'];
   var train = prompt('Choose the train you want! \nThe (L) Train \nThe (N) Train \nThe (S)ix Train', 'Please select the train');
   
-  switch(train){
-    case 'L':
+  switch(train.toLowerCase()){
+    case 'l':
       alert('L train:\n\n' + trainL.join('\n'));
       alert('Thank You');
     break;
-    case 'N':
+    case 'n':
       alert('N train:\n\n' + trainN.join('\n'));
       alert('Thank You');
     break;
-    case 'S':
+    case 's':
       alert('S train:\n\n' + trainS.join('\n'));
       alert('Thank You');
     break;
