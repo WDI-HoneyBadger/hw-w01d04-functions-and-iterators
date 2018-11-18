@@ -228,6 +228,17 @@ truthyFalsey(arr);
 
 // BONUS: Double X Counter
 
+var countXx = function (word) {
+  var count = 0;
+  for (var i = 0; i < word.length; i++) {
+    if ((word.charAt(i) === 'x') &&  (word.charAt(i + 1) === 'x')) {
+        count++;
+    } 
+  }
+  return count;
+}
+
+console.log( countXx("xxxx") );
 
 
 // BONUS Two-Dimensional Array
