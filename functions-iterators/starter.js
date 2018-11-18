@@ -254,8 +254,28 @@ for (var i = 0; i < n; i++)
     }
 } return myArray;
 }
+ console.log(twoDimensionalArray(5));
 
-console.log(twoDimensionalArray(5));
+
+// SUPER MEGA BONUS
+
+var twoDimensionalArray1 = function (n) {
+  var myArray = [];
+for (var i = 0; i < n; i++)
+{
+  myArray.push( [] );
+    for (var j = 0; j < n; j++)
+    {
+      if(i == j)
+      myArray[i].push(1);
+      else
+      myArray[i].push(0);
+    }
+} return myArray;
+}
+
+console.log(twoDimensionalArray1(5));
+
 
 /* connection checker console log */
 console.log('starter.js is connected! Let\'s get to work! 💪');
