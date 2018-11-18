@@ -243,6 +243,20 @@ console.log( countXx("xxxx") );
 
 // BONUS Two-Dimensional Array
 
+var twoDimensionalArray = function (n) {
+  var myArray = [];
+for (var i = 0; i < n; i++)
+{
+  myArray.push( [] );
+    for (var j = 0; j < n; j++)
+    {
+      myArray[i].push(0);
+    }
+} return myArray;
+}
+
+console.log(twoDimensionalArray(5));
 
 /* connection checker console log */
 console.log('starter.js is connected! Let\'s get to work! 💪');
+
