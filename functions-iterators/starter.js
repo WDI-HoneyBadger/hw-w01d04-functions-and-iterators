@@ -29,11 +29,26 @@ This will help us track your progress and it will give you practice writing good
 
 // PART 0: Just DO it!!
 
+function justDoIt(){
+  return "JUST DO IT!";
+}
+
+console.log(justDoIt('Norah'));
 
 
 // PART 1: Big or Small String?
 
 
+function oddOrEvenString(word){
+  if (word < 10 ) {
+      return "This word is loooooong!";
+  }
+  else {
+      return "This word is short";
+  }
+}
+
+console.log(oddOrEvenString('Norah'));
 
 // PART 2: Odd or Even String Length?
 
@@ -45,11 +60,32 @@ This will help us track your progress and it will give you practice writing good
 
 // PART 4: Sum Array
 
-
+var val;
+var a = ["a", "b", "c"];
+for (val of a) {
+    console.log(val);
+}
 
 // PART 5: Vowel Count
 
 
+function getVowels(str) {
+  var vowelsCount = 0;
+
+  
+  var string = str.toString();
+
+
+  for (var i = 0; i <= string.length - 1; i++) {
+
+    if (string.charAt(i) == "a" || string.charAt(i) == "e" || string.charAt(i) == "i" || string.charAt(i) == "o" || string.charAt(i) == "u") {
+      vowelsCount += 1;
+    }
+  }
+  return vowelsCount;
+}
+
+console.log(getVowels('Norah'));
 
 // PART 6: Initials
 
