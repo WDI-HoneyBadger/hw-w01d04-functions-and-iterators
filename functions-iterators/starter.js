@@ -1,82 +1,236 @@
-/* ============ BEFORE YOU GET STARTED ============ */
+// //PART0://
+var name = "Jumanah"
 
-/* here is a very short function that pops up an alert window that says 'Hello!' */
-function hello() {
-  alert('Hello!');
+function justDoIt(name) {
+    return name + " " + "JUST DO IT !!";
 }
 
-/* Here's the steps to test it:
+// console.log(justDoIt(name));
 
-- Open index.html in chrome.
-- Type the keyboard shortcut `cmd + option + j`. Dev tools should open to the console.
-- You should see the message saying 'starter.js is connected!'
-- Underneath that, next to the blue arrow, type `hello()` to call the `hello` function
-- You should get an alert window that says HELLO!
 
-*/
+// //PART1://
 
-/* ================= AS YOU COMPLETE EACH STEP ============= */
 
-/* After each step, perform the following commands in the terminal:
-1. git add .
-2. git commit -m "add completed part PART-NUMBER-HERE"
-This will help us track your progress and it will give you practice writing good commit messages!! 
-*/
+function bigOrSmallString(bigOrS) {
+    if (bigOrS.length >= 10) {
 
-/* ++++====+++==++++==+++++======++++===++++++=====+++==++++++++++===== */
-/* ======================= WRITE YOUR ANSWERS HERE!!!!! =============== */
-/* ++++====+++==++++==+++++======++++===++++++=====+++==++++++++++===== */
-
-// PART 0: Just DO it!!
+        return (`${bigOrS} "This word is loooooong!"`);
+    } else {
+        return (`${bigOrS}"this is short"`);
+    }
+}
+//  console.log(bigOrSmallString('hlolalala'));
 
 
 
-// PART 1: Big or Small String?
+// // PART2 //
 
 
 
-// PART 2: Odd or Even String Length?
+function oddOrEvenString(wordLength) {
+    if (wordLength.length() % 2 === 0) {
+        return ("This string length is TOTALLY even!")
+    } else {
+        return ("This string's length is odd..")
+    }
+
+}
+
+//console.log(oddOrEvenString('complicated')); 
 
 
 
-// PART 3: Median
+// //PART3 //
+
+
+var array = [1, 5, 6, 2, 3, 4];
+
+function medianOfArray(array) {
+    array.sort();
+    if (array.length % 2 === 0) {
+        var array2 = array.length / 2;
+        array[array2];
+
+
+    } else {
+        var array3 = array.lenth / 2;
+        var jay = array[array3] + array[array3 + 1];
+        return jay;
+    }
+}
 
 
 
-// PART 4: Sum Array
+
+// // PART 4 //
+
+
+var numbers = [1, 2, 5, 6, 7];
+var sum = 0;
+function sumArray(numbers) {
+    for (var i = 0; i < numbers.length; i++) {
+        sum += numbers[i]
+    }
+}
+//  console.log(numbers);
+
+
+// // PART 5 //
+
+// //      PART 5: Vowel Count
+
+
+function vowelCount(str) {
+    var vowelscount = 0
+    var string = str.toString();
+
+    for (var i = 0; i <= string.length - 1; i++)
+
+        if ((string.charAt(i) == "a") || (string.charAt(i) == "e") ||
+            (string.charAt(i) == "i") || (string.charAt(i) == "o") || (string.charAt(i) == "u")) {
+            vowelCount += 1;
+        }
+}
+return vowelCount;
 
 
 
-// PART 5: Vowel Count
 
 
 
-// PART 6: Initials
+// // PART 6 //
+
+
+var name = 'Jumanah Alharbi';
+
+var FirstLastName = function (name) {
+    var separate = name.split(' ')
+    var initial = ''
+    for (var i = 0; i < separate.length; i++) {
+        if (separate[i].length > 0 && separate[i] !== '') {
+            initial += separate[i][0]
+        }
+    }
+    return initial
+}
+
+// FirstLastName(name);
 
 
 
-// PART 7: Days of the week
 
 
 
-// PART 8: Let's take the Subway
+// // PART 7 //
+
+var text;
+var daysOfWeek = document.getElementById("weekdays").value;
+
+switch (true) {
+    case "Monday":
+        text = "Energize!"
+        break;
+    case "Tuesday":
+        text = "Just getting started!"
+        break;
+    case "Wednesday":
+        text = "Hump Hump!"
+        break;
+    case "Thursday":
+        text = "Almost there!"
+        break;
+    case "Friday":
+    case "Saturday":
+    case "Sunday":
+        text = "Weeeeeee!"
+        break;
+    default:
+        text = "Huh, sorry didn't get that?"
+
+}
+
+
+// console.log(text);
 
 
 
-// PART 9: Truth - y & False -y Checker
+// // PART 8 //
+
+
+var selectYourTrain;
+var selectYourTrain = prompt("Lets take the subway,choose witch one you eant to kae ");
+switch (switchTrain) {
+
+    case 'L':
+        selectYourTrain = "8th Ave",
+            "6th Ave",
+            "Union Square",
+            "3rd Ave",
+            "1st Ave",
+            "Bedford Ave"
+        break;
+
+    case 'N':
+
+        selectYourTrain = "Times Square"
+        "Herald Square"
+        "28th St"
+        "23rd St - DAPS Nexus"
+        "Union Square"
+        "8th St"
+        break;
+
+    case 'S':
+        selectYourTrain = "Grand Central",
+            "33rd St",
+            "28th St",
+            "23rd St",
+            "Union Square",
+            "Astor Place"
+        break;
+}
+
+alert("Thank you");
+
+
+
+
+
+
+
+
+
+// PART 9 //
+
+// Create a function truthyFalseythat accepts an array as an argument arr 
+// (provided in the starter folder), goes through it, 
+// and console logs whether it's a truth-y or false-y value
+
 var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
 
+// function truthyFalseythat(arr){
+// arr.forEach(function(inputarray){
+//     if (inputarray){
+//         console.log("Truthy")
+//     }
+//     else {
+//         console.log("Falsy")
+//     }
+// })
+// }
+// truthyFalseythat(arr1);
 
+function truthyFalseythat(arrInput) {
 
+    for (var i = 0; i < arrInput.length; i++) {
+        if (arrInput[i]) {
+            console.log("Truthy");
+        }
+        else {
+            console.log("Falsy");
+        }
+    }
+}
+console.log("hhhh")
 
-// BONUS: Double X Counter
-
-
-
-// BONUS Two-Dimensional Array
-
-
-
-
-/* connection checker console log */
-console.log('starter.js is connected! Let\'s get to work! 💪');
+truthyFalseythat(arr);
