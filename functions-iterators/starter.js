@@ -29,27 +29,58 @@ This will help us track your progress and it will give you practice writing good
 
 // PART 0: Just DO it!!
 
-
+function justDoIt(name){
+  console.log(`${name}, JUST DO IT !!`);
+}
 
 // PART 1: Big or Small String?
 
-
+function bigOrSmallString (myName){
+  if (myName.length > 10){
+    console.log (" This Worf id loooong 😬")
+  }else{ console.log (" This Word is Small");
+  }
+  
+} console.log(bigOrSmallString('myName'));
 
 // PART 2: Odd or Even String Length?
 
+function oddOrEvenString (myString){
+  if (myString.length %2==0){
+    console.log ("This String is TOTALLY Even");
+}else { if (myString.length%2 != 0)
+console.log (" This is Odd ");
+}
+}
 
 
 // PART 3: Median
 
+function medianOfArray (numArray){
 
+sort(numArray);
+
+if (numArray.length % 2 == 0){
+    console.log(numArray[numArray.length/2] + numArray[numArray.length/2 - 1])/2;
+}else{
+    console.log([numArray.length/2]);
+}}
 
 // PART 4: Sum Array
 
+function sumArray (arr){
 
+  for(var i;arr.length !=0; i++ ){
+    console.log(arr.length[i])
+  }
+  
+}
 
 // PART 5: Vowel Count
 
-
+/* function vowelCont (myVowel){
+  for( var i=0; i< myVowel.length)
+} */
 
 // PART 6: Initials
 
@@ -58,7 +89,26 @@ This will help us track your progress and it will give you practice writing good
 // PART 7: Days of the week
 
 
-
+var weekDay = prompt ("what is today?");
+function theday (){
+  if (theday == "Sunday"){
+    return " Weeeeeee!!"
+  }else if( theday ==  "Monday"){
+    return " Energize!"
+  }else if( theday ==  "Tuesday"){
+    return " Just getting Statrted"
+}else if( theday ==  "Wednesday"){
+  return " Hump Hump!"
+}else if( theday ==  "Thursday"){
+  return " Almost there!!"
+}else if( theday ==  "Friday"){
+  return " Weeeeeee!"
+}else if( theday ==  "Saturday"){
+  return " Weeeeeee!"
+} else {
+  return "Huh, sorry didn't get that?"
+}
+} 
 // PART 8: Let's take the Subway
 
 
@@ -79,4 +129,4 @@ var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', f
 
 
 /* connection checker console log */
-console.log('starter.js is connected! Let\'s get to work! 💪');
+/* console.log('starter.js is connected! Let\'s get to work! 💪'); */
