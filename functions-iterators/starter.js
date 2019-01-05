@@ -181,38 +181,4 @@ console.log(m); */
 // console.log(m);
 //______________________________________________________
 
-// PART 8: Let's take the Subway
-// function train(){
-//   var selecion = window.prompt("Please select one of the following: \n \n The (L) Train, The (N) Train, The (S)ix Train");
-//   if(selecion == "L" || selecion == "l"){
-//     alert("The Stops:\n \n- 8th Ave \n- 6th Ave \n- Union Square \n- 3rd Ave \n- 1st Ave \n- Bedford Ave");
-  
-//   }else if(selecion == "n" || selecion == "N"){
-//     alert("The Stops:\n \n- Times Square \n- Herald Square \n- 28th St \n- 23rd St - DAPS Nexus \n- Union Square \n- 8th St");
-//   }else if(selecion == "s" || selecion == "S"){
-//     alert("The Stops:\n \n- Grand Central \n- 33rd St \n- 28th St - 23rd St \n- Union Square \n- Astor Place");
-//   }
-// }
-// //train();
-// // PART 9: Truth - y & False -y Checker
-// var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
-// var counterX =0;
-// // BONUS: Double X Counter
-// function countXx(string){
-  
-//   for (var i =0; i<=string.length; i++){
-//     if(string[i] == "x"  || string[i] == ("X") ){
-//       counterX++;
-//     }
-//   }
-// // BONUS Two-Dimensional Array
-//   console.log(counterX);
-//    if(counterX % 2 ===0){
-//      counterX =  counterX / 2;
-//      console.log(`You have ${counterX} pairs of x`);
-//    }else if(counterX % 2 != 0){
-//     counterX = (counterX - 1) / 2;
-//     console.log(`You have ${counterX} pairs of x`);
-//   }}
-  
-// countXx("Movie");
+
