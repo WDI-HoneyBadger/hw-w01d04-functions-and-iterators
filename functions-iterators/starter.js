@@ -1,82 +1,126 @@
-/* ============ BEFORE YOU GET STARTED ============ */
-
-/* here is a very short function that pops up an alert window that says 'Hello!' */
-function hello() {
-  alert('Hello!');
+function justDoIt(string) {
+  var name = string + ", Just Do It ";
+  return name
 }
+justDoIt('mohrah');
+//PART 1: Big or Small String?
 
-/* Here's the steps to test it:
-
-- Open index.html in chrome.
-- Type the keyboard shortcut `cmd + option + j`. Dev tools should open to the console.
-- You should see the message saying 'starter.js is connected!'
-- Underneath that, next to the blue arrow, type `hello()` to call the `hello` function
-- You should get an alert window that says HELLO!
-
-*/
-
-/* ================= AS YOU COMPLETE EACH STEP ============= */
-
-/* After each step, perform the following commands in the terminal:
-1. git add .
-2. git commit -m "add completed part PART-NUMBER-HERE"
-This will help us track your progress and it will give you practice writing good commit messages!! 
-*/
-
-/* ++++====+++==++++==+++++======++++===++++++=====+++==++++++++++===== */
-/* ======================= WRITE YOUR ANSWERS HERE!!!!! =============== */
-/* ++++====+++==++++==+++++======++++===++++++=====+++==++++++++++===== */
-
-// PART 0: Just DO it!!
+function bigOrSmallString(s) {
+  if (s.length > 10) {
+      return "This word is loooooong";
+  }
+  else {
+      return "This word is short 😬"
+  };
+}
+bigOrSmallString("mohrah mohammed alateeq ");
 
 
 
-// PART 1: Big or Small String?
+//Odd or Even String Length?
+
+function oddOrEvenString(s) {
+  if (s.length % 2 != 0) {
+      return "his string's length is odd";
+  } else if (s.length % 2 == 0) {
+      return "This string length is TOTALLY even!";
+  }
+}
+oddOrEvenString("mohrah");
 
 
 
-// PART 2: Odd or Even String Length?
+//PART 3: Median :
+
+
+function calculateMedian(int) {
+  int.sort();
+  if (int.length % 2 == 0) {
+      var m = 0;
+      m = int.length / 2;
+      return int[m];
+  } else if (int.length % 2 != 0) {
+      var n = 0;
+      n = int.length / 2;
+      var s = (int[n] + int[n + 1]);
+      n = s;
+      return int[n];
+
+  } else if (int.length === 0) {
+      console.log("empty");
+  }
+}
+calculateMedian([3, 4, 2, 6.7])
 
 
 
-// PART 3: Median
+//PART 4: Sum Array
+
+function sumArray(arr) {
+  var array = 0;
+  if (arr.length != 0) {
+      for (var i = 0; i <= arr.length; i++) {
+          array += arr[i];
+          return array;
+      }
+  } else {
+      return "empty array";
+  }
+}
+sumArray([3, 2]);
 
 
 
-// PART 4: Sum Array
+//PART 5: Vowel Count:
+function vowel_count(str1) {
+  var vowel_list = 'aeiouAEIOU';
+  var vcount = 0;
 
+  for (var x = 0; x < str1.length; x++) {
+      if (vowel_list.indexOf(str1[x]) !== -1) {
+          vcount += 1;
+      }
 
-
-// PART 5: Vowel Count
-
-
+  }
+  return vcount;
+}
+console.log(vowel_count("The quick brown fox"));
 
 // PART 6: Initials
+function initials(name) {
+  for (var i = 0; i <= name.length; i++) {
+      for (var j = 0; j <= name.length; j++) {
+          if (name[j] == " ") {
+              var name1 = name1 + (name[0].toUpperCase());
+              return name1;
+          }
+      }
+  }
+}
+initials(" gfhjwk huijcqlcj ");
 
 
+//PART 7 : Day Of The Week
 
-// PART 7: Days of the week
+var day;
+var week = document.getElementById("myInput").value;
+switch (week) {
+  case "monday":
+      day = "energize!";
+      break;
+  case "tuesday":
+      day = "gust getting started";
+      break;
+  case "wednesday":
+      day = "Hump Hump";
+      break;
 
-
-
-// PART 8: Let's take the Subway
-
-
-
-// PART 9: Truth - y & False -y Checker
-var arr = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
-
-
-
-
-// BONUS: Double X Counter
-
-
-
-// BONUS Two-Dimensional Array
-
-
-
-
-/* connection checker console log */
-console.log('starter.js is connected! Let\'s get to work! 💪');
+  case "thursday":
+      day = "almost there";
+      break;
+  case "friday":
+      day = "weeeeeeeee";
+      break;
+  default:
+      day = "Huh ,sorry didn't get that";
+}
